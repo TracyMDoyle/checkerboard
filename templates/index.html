@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+    <title>Checker Board</title>
+</head>
+<body>
+    <div class="heading"><h1 style="background-color:black; color:red">******Checkerboard*****</h1>
+    </div>
+    
+    <table>
+        <tr>
+            {% for row in range (row)%}
+                <tr>
+                    {% for col in range (col)%}
+                        {% if (row%2==0 and col%2==0) or (row%2==1 and col%2==1) %}
+                            <td class="row" style="background-color:{{ color1 }};">{{ col }}, {{ row }}</td>
+                        {% else %}
+                            <td class="col" style="background-color:{{ color2 }};">{{ col }}, {{ row }}</td>
+                        {% endif %}
+                    {%endfor%}
+            </tr>
+            {%endfor%}
+        </tr>
+    </table>
+</body>
+</html>

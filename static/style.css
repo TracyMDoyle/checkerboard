@@ -1,0 +1,31 @@
+*{
+    color:beige
+}
+.heading{
+    display: inline-block;
+    background-color: red;
+    width: 100vw;
+}
+h1{
+    background-color: black;
+    color: red;
+    text-align: center;
+    height: 40px;
+}
+body{
+    background-color: linen;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row{
+    background-color: red;
+    height:80px; 
+    width: 80px;
+}
+
+.col{
+    background-color:black; 
+    height:80px; 
+    width: 80px;
+}
